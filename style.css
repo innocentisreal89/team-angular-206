@@ -1,0 +1,138 @@
+:root{
+    --background-color:rgb(103, 103, 221);
+    --color: rgb(13, 13, 68);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: 4% auto;
+    font-family: monospace;
+    font-size: 1.5rem;
+    /* border: 1px solid #ff0000; */
+    height: 500px;
+    
+}
+h2{
+    /* border: 2px solid green; */
+    text-align: center;
+    
+}
+.name{
+    color: rgb(6, 6, 92);
+}
+.title{
+    color: #ff0000;
+}
+.note{
+    /* display: inline-block; */
+    /* overflow: hidden; */
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-iteration-count: infinite;
+    /* margin-left: 5px;
+    margin-top: 15px; */
+    margin: 20px auto;
+}
+@keyframes slide-in {
+    from{
+        margin-left:45%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+.form{
+    margin:30px auto;
+    width: 80%;
+    /* padding: 5px; */
+    border-radius: 2px;
+    padding: 20px 35px;
+    -webkit-box-shadow:0px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    
+
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+label{
+    font-size: 1.2em;
+    margin: 5px  auto;
+    color: rgb(26, 26, 109);
+    
+}
+input{
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* outline-color: var(--background-color); */
+    border: 1px solid var(--background-color);
+}
+input::placeholder{
+    font-size: small;
+}
+input:focus{
+    outline-color: var(--background-color);
+}
+#btn{
+    margin: 5px auto;
+    padding: 6px;
+    border-radius: 4px;
+    width: 40%;
+    background-color: var(--color);
+    color: white;
+    font-size: 1.0rem;
+    border: 1px solid var(--color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(2, 2, 107);
+}
+.footer{
+    background-color: rgb(21, 21, 121);
+    height: 100px;
+    margin-bottom: 0px;
+}
+.name1{
+    color: whitesmoke;
+    font-size: 17px;
+    /* margin-left: 90%; */
+    text-align: right;
+}
+
+@media screen and (max-width:767px) and (orientation:portrait){
+    .section{
+        width: 90%;
+        margin: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    .note{
+        animation-name: none;
+        margin: 25px auto;
+        text-align: center;
+    }
+    body{
+        width: 100%;
+    }
+    .name1{
+        text-align: center;
+    }
+    h2{
+        display: flex;
+        flex-direction: column;
+    }
+    .form{
+        padding: 5px 15px;
+    }
+}

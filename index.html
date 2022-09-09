@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+    <title>Phonie</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <h2>make some magic here!!</h2>
+    <main class="container">
+      <h2><span class="name">Team Angular</span> <span class="title">Mobile NG</span></h2>
+      <div>
+        <p class="note">Check your Network Provider </p>
+      </div>
+      <section class="section">
+        <form action="" method="post" class="form">
+        <div class="form_group">
+        <label for="name" >Phone Number </label>
+        <input type="tel" id="phone_no" name="phone" autocomplete="off" placeholder='Enter Phone Number' maxlength="14" list="suggestion">
+        </div>
+        <div class="form_group" id="image"></div>
+        
+        <div class="form_group">
+          <button type="reset" id="btn">Reset</button>
+        </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="name1">@Team Angular</p>
+      <div></div>
+    </footer>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
